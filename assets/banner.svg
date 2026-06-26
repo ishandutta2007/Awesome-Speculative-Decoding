@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Text Gradient -->
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" /> <!-- Purple -->
+      <stop offset="50%" stop-color="#ec4899" /> <!-- Pink -->
+      <stop offset="100%" stop-color="#3b82f6" /> <!-- Blue -->
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d946ef" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Grid Pattern Overlay -->
+  <g opacity="0.05">
+    <path d="M 0,50 L 1200,50 M 0,100 L 1200,100 M 0,150 L 1200,150 M 0,200 L 1200,200 M 0,250 L 1200,250 M 0,300 L 1200,300 M 0,350 L 1200,350" stroke="#ffffff" stroke-width="1" />
+    <path d="M 100,0 L 100,400 M 200,0 L 200,400 M 300,0 L 300,400 M 400,0 L 400,400 M 500,0 L 500,400 M 600,0 L 600,400 M 700,0 L 700,400 M 800,0 L 800,400 M 900,0 L 900,400 M 1000,0 L 1000,400 M 1100,0 L 1100,400" stroke="#ffffff" stroke-width="1" />
+  </g>
+
+  <!-- Speculative Decoding Symbolic Diagram (Drafting Tree Nodes) -->
+  <g transform="translate(850, 200)">
+    <!-- Connection Lines -->
+    <line x1="-150" y1="0" x2="-50" y2="-60" stroke="#4b5563" stroke-width="3" stroke-dasharray="5 5" />
+    <line x1="-150" y1="0" x2="-50" y2="60" stroke="#4b5563" stroke-width="3" stroke-dasharray="5 5" />
+    <line x1="-50" y1="-60" x2="50" y2="-90" stroke="#4b5563" stroke-width="3" />
+    <line x1="-50" y1="-60" x2="50" y2="-30" stroke="#4b5563" stroke-width="3" />
+    <line x1="-50" y1="60" x2="50" y2="30" stroke="#4b5563" stroke-width="3" />
+    <line x1="-50" y1="60" x2="50" y2="90" stroke="#4b5563" stroke-width="3" />
+    
+    <!-- Pulse Lines for Speed -->
+    <path d="M -150,0 Q -100,-80 -50,-60 T 50,-90" fill="none" stroke="url(#accent-cyan)" stroke-width="2" opacity="0.6" />
+    <path d="M -150,0 Q -100,80 -50,60 T 50,90" fill="none" stroke="url(#accent-purple)" stroke-width="2" opacity="0.6" />
+
+    <!-- Nodes -->
+    <circle cx="-150" cy="0" r="24" fill="#1e293b" stroke="#3b82f6" stroke-width="4" filter="url(#glow)" />
+    <text x="-150" y="6" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Base</text>
+
+    <circle cx="-50" cy="-60" r="18" fill="url(#accent-cyan)" />
+    <text x="-50" y="-55" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">K1</text>
+
+    <circle cx="-50" cy="60" r="18" fill="url(#accent-cyan)" />
+    <text x="-50" y="65" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">K2</text>
+
+    <circle cx="50" cy="-90" r="14" fill="url(#accent-purple)" />
+    <text x="50" y="-86" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">K3</text>
+
+    <circle cx="50" cy="-30" r="14" fill="url(#accent-purple)" />
+    <text x="50" y="-26" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">K4</text>
+
+    <circle cx="50" cy="30" r="14" fill="url(#accent-purple)" />
+    <text x="50" y="34" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">K5</text>
+
+    <circle cx="50" cy="90" r="14" fill="url(#accent-purple)" />
+    <text x="50" y="94" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">K6</text>
+
+    <!-- Verified Badge Overlay -->
+    <g transform="translate(100, 0)">
+      <polygon points="0,-15 15,0 0,15 -15,0" fill="#22c55e" filter="url(#glow)" />
+      <path d="M -6,-2 L -2,2 L 6,-6" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="0" y="32" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#22c55e" text-anchor="middle">VERIFIED</text>
+    </g>
+  </g>
+
+  <!-- Title Text -->
+  <text x="80" y="180" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="56" font-weight="900" fill="url(#text-grad)" letter-spacing="1">AWESOME</text>
+  <text x="80" y="245" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="0.5">SPECULATIVE DECODING</text>
+  
+  <!-- Subtitle Text -->
+  <text x="83" y="295" font-family="'Segoe UI', Roboto, Helvetica, sans-serif" font-size="18" font-weight="500" fill="#9ca3af" letter-spacing="0.5">A curated list of methods, papers, and tools to accelerate LLM inference.</text>
+
+  <!-- Accent lines at the bottom -->
+  <rect x="80" y="325" width="220" height="4" fill="url(#accent-cyan)" rx="2" />
+  <rect x="310" y="325" width="80" height="4" fill="url(#accent-purple)" rx="2" />
+</svg>

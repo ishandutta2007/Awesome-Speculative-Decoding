@@ -1,11 +1,23 @@
-# Awesome-Speculative-Decoding
-## Speculative Decoding: Evolution, Variants, Types, & Applications
+# 🚀 Awesome Speculative Decoding
 
-Speculative Decoding—also known as assisted generation or draft-then-verify decoding—is an advanced inference optimization framework designed to accelerate token generation in Large Language Models (LLMs). Autoregressive generation is fundamentally bottlenecked by GPU memory bandwidth because a massive "target" model must load billions of weights from high-bandwidth memory (HBM) to on-chip SRAM just to predict a single token. Speculative Decoding breaks this bottleneck by using a compact, hyper-fast "draft" model to speculatively generate a sequence of candidate tokens (a draft look-ahead) in rapid succession. The massive target model then evaluates the entire block of candidate tokens simultaneously in a single, parallelized forward pass, drastically increasing generation throughput without altering the model's original mathematical output distribution.
+<meta name="description" content="Awesome Speculative Decoding - A curated collection of speculative decoding algorithms, research papers, and production serving tools to accelerate LLM inference." />
+<meta name="keywords" content="speculative decoding, LLM inference, assisted generation, Medusa, EAGLE, vLLM, TensorRT-LLM, machine learning, AI acceleration" />
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Speculative Decoding Banner" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Speculative-Decoding/pulls"><img src="https://img.shields.io/github/issues-pr/ishandutta2007/Awesome-Speculative-Decoding?color=green" alt="PRs Welcome" /></a> <a href="https://github.com/ishandutta2007/Awesome-Speculative-Decoding/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Speculative-Decoding?style=flat" alt="GitHub stars" /></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+## 🌟 Speculative Decoding: Evolution, Variants, Types, & Applications
+
+**Speculative Decoding**—also known as assisted generation or draft-then-verify decoding—is an advanced inference optimization framework designed to accelerate token generation in Large Language Models (LLMs). Autoregressive generation is fundamentally bottlenecked by GPU memory bandwidth because a massive "target" model must load billions of weights from high-bandwidth memory (HBM) to on-chip SRAM just to predict a single token. Speculative Decoding breaks this bottleneck by using a compact, hyper-fast "draft" model to speculatively generate a sequence of candidate tokens (a draft look-ahead) in rapid succession. The massive target model then evaluates the entire block of candidate tokens simultaneously in a single, parallelized forward pass, drastically increasing generation throughput without altering the model's original mathematical output distribution.
 
 ---
 
-## 1. The Chronological Evolution
+## 📅 1. The Chronological Evolution
 
 The technical implementation of predictive generation has transitioned from simple dual-model pairs to self-contained single-model layers and tree-structured multi-hypothesis search paths.
 
@@ -25,7 +37,7 @@ flowchart LR
 
 ---
 
-## 2. Core Architectural & System Variants
+## 🏗️ 2. Core Architectural & System Variants
 
 Speculative frameworks are strictly categorized based on the structural layout and parameter source of the drafting engine.
 
@@ -37,7 +49,7 @@ Speculative frameworks are strictly categorized based on the structural layout a
 
 ---
 
-## 3. Verification & Sampling Modality Types
+## 🔒 3. Verification & Sampling Modality Types
 
 When the target model reviews the candidate tokens, the validation engine utilizes distinct statistical verification layers to protect final generation accuracy.
 
@@ -49,7 +61,7 @@ When the target model reviews the candidate tokens, the validation engine utiliz
 
 ---
 
-## 4. Production Engineering Challenges & Mitigations
+## ⚙️ 4. Production Engineering Challenges & Mitigations
 
 Deploying speculative serving layers within high-volume production setups requires balancing draft acceptance rates against hardware tensor core scaling.
 
@@ -60,7 +72,7 @@ Deploying speculative serving layers within high-volume production setups requir
 
 ---
 
-## 5. Frontier Real-World AI Applications
+## 🌐 5. Frontier Real-World AI Applications
 
 | Real-World Application | Description & Implementation Details | Year | Paper / System Link |
 | :--- | :--- | :--- | :--- |
