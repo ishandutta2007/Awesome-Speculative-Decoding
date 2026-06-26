@@ -80,3 +80,16 @@ Deploying speculative serving layers within high-volume production setups requir
 | [**Real-Time Autonomous Software Coding Assistants**](docs/software_coding_assistants.md) | Powers IDE autocomplete extensions. Because source code contains highly repetitive structural syntaxes, keywords (`def`, `return`, `import`), and common indentation spacing patterns, lookahead and self-speculative decoding engines achieve immense acceptance rates, outputting full blocks of code instantaneously. | 2023 | [Prompt Lookup Decoding (2023)](https://github.com/apoorvumang/prompt-lookup-decoding) / [SSD (2023)](https://arxiv.org/abs/2309.08168) |
 | [**On-Device Edge Architecture Execution**](docs/on_device_edge_execution.md) | Running localized reasoning models on consumer hardware (smartphones, laptops). Because edge chips feature constrained memory bandwidth, speculative configurations minimize HBM lookup operations, permitting interactive, low-latency AI conversations without draining the device's physical battery cells. | 2024 | [EdgeLLM (2024)](https://ieeexplore.ieee.org/document/10596357) / [SpecMemo (2025)](https://arxiv.org/abs/2506.01986) |
 
+---
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Speculative-Decoding&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Speculative-Decoding&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Speculative-Decoding&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Speculative-Decoding&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+
