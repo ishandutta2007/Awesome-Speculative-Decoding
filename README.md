@@ -9,8 +9,12 @@ Speculative Decoding—also known as assisted generation or draft-then-verify de
 
 The technical implementation of predictive generation has transitioned from simple dual-model pairs to self-contained single-model layers and tree-structured multi-hypothesis search paths.
 
-[Dual-Model Vanilla (Leviathan, 2022)] ---> [Medusa / Self-Speculative (2023)] ---> [Tree-Based / Multi-Candidate (Medusa/EAGLE)](Rigid Small Draft Model Overheads)         (Multiple Multi-Head Projections)           (Dynamic Branch Non-Linear Verification)
-
+```mermaid
+flowchart LR
+    A["Dual-Model Vanilla (Leviathan, 2022)<br/>(Rigid Small Draft Model Overheads)"]
+    --> B["Medusa / Self-Speculative (2023)<br/>(Multiple Multi-Head Projections)"]
+    --> C["Tree-Based / Multi-Candidate (Medusa/EAGLE)<br/>(Dynamic Branch Non-Linear Verification)"]
+```
 
 
 *   **The Dual-Model Foundation Era (Leviathan et al. / Chen et al., 2022)**
